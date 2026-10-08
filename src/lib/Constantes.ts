@@ -1,0 +1,1 @@
+export const ANOS_EXPERIENCIA = new Date().getFullYear() - 2009;
