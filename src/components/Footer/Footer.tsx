@@ -7,7 +7,7 @@ export default function Footer() {
     <>
       {/* WhatsApp flotante */}
       <a
-        href="https://wa.me/5491163968564?text=Hola%2C+quiero+consultar+sobre+sus+servicios"
+        href="https://wa.me/5491163978564?text=Hola%2C+quiero+consultar+sobre+sus+servicios"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-7 right-7 z-50 w-13 h-13 bg-[#25D366] rounded-sm flex items-center justify-center shadow-lg hover:-translate-y-1 transition-transform duration-200"

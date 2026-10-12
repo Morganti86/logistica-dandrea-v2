@@ -24,7 +24,7 @@ export default function Historia() {
 
         {/* Texto */}
         <p className="text-[#666] text-base leading-relaxed font-light mb-6">
-          Pasamos décadas trabajando dentro de las operaciones logísticas más importantes del país.
+          Pasamos décadas trabajando en algunas de las operaciones logísticas más importantes del país.
         </p>
         <p className="text-[#666] text-base leading-relaxed font-light mb-6">
           Esa experiencia nos permitió entender qué hace eficiente a una empresa logística — y qué valoran realmente los clientes:{" "}
@@ -46,12 +46,12 @@ export default function Historia() {
         {[
           {
             num: "01",
-            title: "Experiencia real, no marketing",
+            title: "Experiencia que se traduce en resultados",
             desc: "Cada proceso que diseñamos está respaldado por décadas de experiencia en operaciones logísticas de gran escala. No vendemos promesas: entregamos resultados.",
           },
           {
             num: "02",
-            title: "Trato directo, sin intermediarios",
+            title: "Trato directo y sin intermediarios",
             desc: "Somos una PYME y lo asumimos con orgullo. Cada cliente tiene contacto directo con nuestro equipo, sin call centers ni derivaciones. Comunicación clara, respuesta rápida y sin fricción.",
           },
           {

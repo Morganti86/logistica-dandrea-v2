@@ -6,14 +6,14 @@ const servicios = [
     label: "Almacenamiento",
     title: "Tu mercadería\nen depósito seguro",
     image: "/Services/Almacenamiento.webp",
-    tags: ["Depósito monitoreado", "Control de stock", "Palletizado y enfilmado", "Fraccionamiento", "Etiquetado", "Gestión de devoluciones"],
+    tags: ["Recepción y control de mercadería", "Etiquetado", "Depósito monitoreado", "Control de stock", "Palletizado y enfilmado", "Fraccionamiento"],
   },
   {
     num: "02",
     label: "Distribución",
     title: "Entregas donde\nlo necesitás",
     image: "/Services/Distribucion.webp",
-    tags: ["Puerta a puerta", "Interplantas", "Picking y preparación", "Contenedores", "Gestión de devoluciones"],
+    tags: ["Picking y preparación", "Puerta a puerta", "Interplantas", "Contenedores", "Gestión de devoluciones"],
   },
   {
     num: "03",

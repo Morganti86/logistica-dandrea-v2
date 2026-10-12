@@ -111,10 +111,35 @@ export default function Contacto() {
         {/* Info */}
         <div className="flex flex-col justify-between">
           {[
-            { label: "Teléfono", value: "11-6396-8564", sub: null },
-            { label: "Email", emails: ["Contacto@logisticadandrea.com.ar", "Beatriz@logisticadandrea.com.ar"] },
-            { label: "Horario de atención", value: "Lunes a viernes · 8:00 — 16:00 hs", sub: null },
-            { label: "Dirección", value: "Domingo F. Sarmiento 1719, Villa San Andrés", sub: "Buenos Aires, Argentina" },
+            {
+              label: "Teléfono",
+              value: "11-6397-8564",
+              href: "tel:+541163978564",
+              sub: null,
+            },
+            {
+              label: "Email",
+              emails: [
+                {
+                  value: "contacto@logisticadandrea.com.ar",
+                  href: "mailto:contacto@logisticadandrea.com.ar?cc=beatriz@logisticadandrea.com.ar",
+                },
+                {
+                  value: "beatriz@logisticadandrea.com.ar",
+                  href: "mailto:beatriz@logisticadandrea.com.ar?cc=contacto@logisticadandrea.com.ar",
+                },
+              ],
+            },
+            {
+              label: "Horario de atención",
+              value: "Lunes a viernes · 8:00 — 16:00 hs",
+              sub: null,
+            },
+            {
+              label: "Dirección",
+              value: "Domingo F. Sarmiento 1719, Villa San Andrés",
+              sub: "Buenos Aires, Argentina",
+            },
           ].map((item) => (
             <div key={item.label} className="py-6 border-b border-white/7 flex gap-5 items-start">
               <div className="w-2 h-2 rounded-full bg-[#C8202E] flex-shrink-0 mt-1.5" />
@@ -122,7 +147,23 @@ export default function Contacto() {
                 <div className="text-[#444] text-xs tracking-[0.2em] uppercase mb-1">{item.label}</div>
                 <div className="text-[#ccc] text-sm font-light">
                   {item.emails ? (
-                    item.emails.map((email) => <div key={email}>{email}</div>)
+                    item.emails.map((email) => (
+                      <div key={email.value}>
+                        <a
+                          href={email.href}
+                          className="hover:text-white transition-colors"
+                        >
+                          {email.value}
+                        </a>
+                      </div>
+                    ))
+                  ) : item.href ? (
+                    <a
+                      href={item.href}
+                      className="hover:text-white transition-colors"
+                    >
+                      {item.value}
+                    </a>
                   ) : (
                     item.value
                   )}
@@ -134,7 +175,7 @@ export default function Contacto() {
 
           {/* WhatsApp */}
           <a
-            href="https://wa.me/5491163968564?text=Hola%2C+quiero+consultar+sobre+sus+servicios"
+            href="https://wa.me/5491163978564?text=Hola%2C+quiero+consultar+sobre+sus+servicios"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-8 bg-[#25D366] flex items-center gap-3 px-6 py-4 rounded-sm hover:opacity-90 transition-opacity"
